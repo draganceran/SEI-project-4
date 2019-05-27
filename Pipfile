@@ -7,6 +7,11 @@ verify_ssl = true
 
 [packages]
 flask = "*"
+pony = "*"
+marshmallow = "*"
+psycopg2-binary = "*"
+bcrypt = "*"
+pyjwt = "*"
 
 [requires]
 python_version = "3.7"
