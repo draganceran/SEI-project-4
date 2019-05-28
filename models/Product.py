@@ -9,7 +9,7 @@ class Product(db.Entity):
 class ProductSchema(Schema):
     id = fields.Str(dump_only=True)
     name = fields.Str(required=True)
-    farms = fields.Nested('FarmSchema', many=True, exclude=('farm',))
+    farms = fields.Nested('FarmSchema', many=True, exclude=('farm', 'user',))
 
     @post_load
     def load_farms(self, data):
