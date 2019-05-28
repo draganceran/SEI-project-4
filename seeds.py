@@ -42,6 +42,11 @@ with db_session():
         long=0.39528,
         lat=51.19721,
 
+
+
+
+
+
     )
     Comment(content='nice farm for detox ', user=dragan, farm=my_farm)
 

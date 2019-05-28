@@ -5,6 +5,6 @@ from controllers import products
 
 
 
-app.register_blueprint(farms.router)
-app.register_blueprint(auth.router)
-app.register_blueprint(products.router)
+app.register_blueprint(farms.router, url_prefix='/api')
+app.register_blueprint(auth.router, url_prefix='/api')
+app.register_blueprint(products.router, url_prefix='/api')
